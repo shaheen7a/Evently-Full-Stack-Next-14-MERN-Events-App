@@ -24,6 +24,7 @@ import Image from "next/image";
 import Dropdown from "./Dropdown";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Checkbox } from "../checkbox";
 
 type EventFormProps = {
   userId: string;
@@ -251,12 +252,12 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                               >
                                 Free Ticket
                               </label>
-                              {/* <Checkbox
+                              <Checkbox
                                 onCheckedChange={field.onChange}
                                 checked={field.value}
                                 id="isFree"
                                 className="mr-2 h-5 w-5 border-2 border-primary-500"
-                              /> */}
+                              />
                             </div>
                           </FormControl>
                           <FormMessage />
