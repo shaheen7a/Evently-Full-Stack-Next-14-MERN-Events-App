@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import { eventFormSchema } from "@/lib/validator";
 import { eventDefaultValues } from "@/constants";
 import { Textarea } from "../textarea";
-import FileUploader from "./FileUploader";
+import { FileUploader } from "./FileUploader";
 import { useState } from "react";
 
 type EventFormProps = {
@@ -27,7 +27,7 @@ type EventFormProps = {
 };
 
 const EventForm = ({ userId, type }: EventFormProps) => {
-  const [files, setFiles] = useState<File[]>([])
+  const [files, setFiles] = useState<File[]>([]);
   const initialValues = eventDefaultValues;
 
   // 1. Define your form.
